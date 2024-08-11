@@ -75,7 +75,7 @@
             src="bxllinkedin.svg"
           />
         </div>
-        <div class="contact-details-wrapper">
+        <div  id="removableDiv" class="contact-details-wrapper">
           <div class="contact-details">
             <div class="email-details">
               <div class="email-wrapper">
@@ -94,6 +94,27 @@
           </div>
         </div>
       </div>
+      <script>
+        // Function to check and remove the div
+        function checkDivSize() {
+            const div = document.getElementById('removableDiv');
+            if (div) {
+                const rect = div.getBoundingClientRect();
+                const minWidth = 6700; // Minimum width threshold
+                 // Minimum height threshold
+
+                if (rect.width < minWidth ) {
+                    div.remove();
+                }
+            }
+        }
+
+        // Listen for window resize event
+        window.addEventListener('resize', checkDivSize);
+
+        // Initial check on page load
+        window.addEventListener('load', checkDivSize);
+    </script>
       <header class="header">
         <div class="navigation">
           <div class="nav-links">

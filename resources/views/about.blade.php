@@ -38,7 +38,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap"
     />
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   
   </head>
   <body>
@@ -89,6 +89,10 @@
     <a class="contact3" href="{{ asset('/contact-us') }}">CONTACT</a>
   </nav>
 </nav>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
           <div class="frame-wrapper19">
             <button class="frame-button">
@@ -352,5 +356,7 @@
         </div>
       </section>
     </div>
+
+  
   </body>
 </html>
