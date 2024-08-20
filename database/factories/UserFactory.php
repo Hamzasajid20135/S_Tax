@@ -32,6 +32,7 @@ class UserFactory extends Factory
         ];
     }
 
+    //sd
     /**
      * Indicate that the model's email address should be unverified.
      */
